@@ -1,23 +1,28 @@
 @use '../util' as *;
 
-.text-preset {
-  &-1 {
-    @include text-preset(var(--fs-300), 100%, 700);
-  }
+.text {
+  &-preset {
+    &-1 {
+      @include text-preset(var(--fs-300), 100%, 700);
+    }
 
-  &-2 {
-    @include text-preset(var(--fs-200), 115%, 400);
-  }
+    &-2 {
+      @include text-preset(var(--fs-200), 115%, 400);
+    }
 
-  &-2-bold {
-    @include text-preset(var(--fs-200), 115%, 700);
-  }
+    &-2-bold {
+      @include text-preset(var(--fs-200), 115%, 700);
+    }
 
-  &-3 {
-    @include text-preset(var(--fs-100), 115%, 700);
-  }
+    &-3 {
+      @include text-preset(var(--fs-100), 115%, 700);
+    }
 
-  &-3-extra {
-    @include text-preset(var(--fs-100), 115%, 800);
+    &-3-extra {
+      @include text-preset(var(--fs-100), 115%, 800);
+    }
+  }
+  &-center {
+    text-align: center;
   }
 }

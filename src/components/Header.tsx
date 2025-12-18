@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='header__logo'>
+        <h1 className='sr-only'>Fylo</h1>
         <Icon name='logo' />
       </div>
       <div className='header__buttons'>

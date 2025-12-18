@@ -2,14 +2,14 @@
 
 :root {
   // Colors
-  --clr-black: #000000;
-  --clr-white: #ffffff;
+  --clr-black: 0 0% 0%;
+  --clr-white: 0 0% 100%;
 
-  --clr-blue-950: #0c122c;
-  --clr-blue-900: #0f1b3d;
-  --clr-blue-850: #1e2d69;
-  --clr-blue-600: #697ed4;
-  --clr-blue-200: #dbd9ff;
+  --clr-blue-950: 229 57% 11%;
+  --clr-blue-900: 224 61% 15%;
+  --clr-blue-850: 228 56% 26%;
+  --clr-blue-600: 228 55% 11%;
+  --clr-blue-200: 243 100% 93%;
 
   // Gradients
   --grad-blue: linear-gradient(

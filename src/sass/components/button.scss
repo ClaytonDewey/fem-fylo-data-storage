@@ -16,7 +16,20 @@
   &-icon {
     height: rem(48);
     width: rem(48);
-    background-color: var(--clr-blue-950);
+    background-color: hsl(var(--clr-blue-950) / 1);
     border-radius: rem(10);
+
+    svg {
+      opacity: 1;
+      transition: var(--transition);
+    }
+
+    &:hover {
+      background-color: hsl(var(--clr-blue-900) / 1);
+
+      svg {
+        opacity: 0.7;
+      }
+    }
   }
 }

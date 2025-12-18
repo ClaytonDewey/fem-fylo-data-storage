@@ -1,0 +1,37 @@
+@use '../util' as *;
+
+.progress {
+  &-container {
+    width: 100%;
+    height: rem(20);
+    background-color: hsl(var(--clr-blue-950) / 1);
+    border-radius: rem(10);
+    padding: rem(3);
+    overflow: hidden;
+    margin-block-end: rem(8);
+  }
+
+  &-bar {
+    position: relative;
+    background-image: var(--grad-red);
+    height: 100%;
+    border-radius: rem(10);
+  }
+
+  &-indicator {
+    position: absolute;
+    right: rem(3);
+    top: 50%;
+    transform: translateY(-50%);
+    height: rem(10);
+    width: rem(10);
+    border-radius: 100%;
+    background-color: hsl(var(--clr-white) / 1);
+  }
+
+  &-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

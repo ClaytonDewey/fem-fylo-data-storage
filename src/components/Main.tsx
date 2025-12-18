@@ -1,4 +1,10 @@
+import { Card } from '.';
+
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <main>
+      <Card />
+    </main>
+  );
 };
 export default Main;
