@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  padding-block-start: rem(128);
+  padding-inline: rem(25);
   position: relative;
   min-height: 100vh;
   font-family: var(--ff-sans);
@@ -30,4 +32,25 @@ body {
     background-position: bottom center;
     background-size: contain;
   }
+
+  @include breakpoint(desktop) {
+    flex-direction: row;
+    gap: rem(32);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: rem(1);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: rem(1);
 }

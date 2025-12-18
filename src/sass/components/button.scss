@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: currentColor;
+  transition: var(--transition);
+
+  &-icon {
+    height: rem(48);
+    width: rem(48);
+    background-color: var(--clr-blue-950);
+    border-radius: rem(10);
+  }
+}
