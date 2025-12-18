@@ -1,11 +1,11 @@
 import { IconDocument, IconFolder, Logo, IconUpload } from '.';
 
 const Icon = ({
-  type,
+  name,
 }: {
-  type: 'document' | 'folder' | 'logo' | 'upload';
+  name: 'document' | 'folder' | 'logo' | 'upload';
 }) => {
-  switch (type) {
+  switch (name) {
     case 'document':
       return <IconDocument />;
     case 'folder':
