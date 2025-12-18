@@ -1,0 +1,33 @@
+@use '../util' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: var(--ff-sans);
+  background-color: var(--clr-blue-950);
+  color: var(--clr-white);
+  background-image: url('../../images/bg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @include breakpoint(tablet) {
+    background-image: url('../../images/bg-desktop.png');
+    background-position: bottom center;
+    background-size: contain;
+  }
+}

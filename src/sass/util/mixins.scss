@@ -1,0 +1,13 @@
+@mixin text-preset(
+  $font-size,
+  $line-height,
+  $font-weight: normal,
+  $font-style: normal,
+  $letter-spacing: normal
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  letter-spacing: $letter-spacing;
+}

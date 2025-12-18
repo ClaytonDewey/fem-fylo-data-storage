@@ -1,0 +1,42 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+
+  --clr-blue-950: #0c122c;
+  --clr-blue-900: #0f1b3d;
+  --clr-blue-850: #1e2d69;
+  --clr-blue-600: #697ed4;
+  --clr-blue-200: #dbd9ff;
+
+  // Gradients
+  --grad-blue: linear-gradient(
+    147deg,
+    rgba(30, 45, 105, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --grad-red: linear-gradient(
+    90deg,
+    rgba(255, 161, 151, 1) 0%,
+    rgba(255, 74, 149, 1) 100%
+  );
+
+  // Font Family
+  --ff-sans: 'Raleway', sans-serif;
+
+  // Font Sizes
+  --fs-300: #{rem(40)};
+  --fs-200: #{rem(14)};
+  --fs-100: #{rem(12)};
+
+  // Transitions
+  @media (prefers-reduced-motion: no-preference) {
+    --transition: all 0.3s ease-in-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    --transition: none;
+  }
+}
