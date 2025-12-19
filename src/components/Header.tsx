@@ -4,12 +4,12 @@ import { useModal } from '../hooks/useModal';
 import { Modal } from '.';
 
 const Header = () => {
-  const { isShown, toggle } = useModal();
+  const { isShown, show, hide } = useModal();
 
   const modalContent = (
     <div>
       <p>This is dynamic content passed to the reusable modal component.</p>
-      <Button type='button' onClick={toggle} className='btn btn-primary mt-4'>
+      <Button type='button' onClick={hide} className='btn btn-primary mt-4'>
         Close from inside
       </Button>
     </div>
@@ -32,7 +32,7 @@ const Header = () => {
           <div className='sr-only'>Folder</div>
         </Button>
 
-        <Button type='button' className='btn btn-icon' onClick={toggle}>
+        <Button type='button' className='btn btn-icon' onClick={show}>
           <Icon name='upload' />
           <div className='sr-only'>Upload</div>
         </Button>
@@ -40,7 +40,7 @@ const Header = () => {
 
       <Modal
         isShown={isShown}
-        hide={toggle}
+        hide={hide}
         modalContent={modalContent}
         headerText='Modal Header'
       />
