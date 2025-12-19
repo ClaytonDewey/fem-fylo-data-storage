@@ -1,7 +1,20 @@
 import { Button } from '.';
 import { Icon } from '../svg/';
+import { useModal } from '../hooks/useModal';
+import { Modal } from '.';
 
 const Header = () => {
+  const { isShown, toggle } = useModal();
+
+  const modalContent = (
+    <div>
+      <p>This is dynamic content passed to the reusable modal component.</p>
+      <Button type='button' onClick={toggle} className='btn btn-primary mt-4'>
+        Close from inside
+      </Button>
+    </div>
+  );
+
   return (
     <header className='header'>
       <div className='header__logo'>
@@ -19,11 +32,18 @@ const Header = () => {
           <div className='sr-only'>Folder</div>
         </Button>
 
-        <Button type='button' className='btn btn-icon'>
+        <Button type='button' className='btn btn-icon' onClick={toggle}>
           <Icon name='upload' />
           <div className='sr-only'>Upload</div>
         </Button>
       </div>
+
+      <Modal
+        isShown={isShown}
+        hide={toggle}
+        modalContent={modalContent}
+        headerText='Modal Header'
+      />
     </header>
   );
 };

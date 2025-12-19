@@ -1,3 +1,4 @@
+export { default as IconClose } from './Close';
 export { default as IconDocument } from './Document';
 export { default as IconFolder } from './Folder';
 export { default as Icon } from './Icon';

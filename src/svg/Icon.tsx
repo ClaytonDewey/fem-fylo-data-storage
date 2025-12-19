@@ -1,11 +1,13 @@
-import { IconDocument, IconFolder, Logo, IconUpload } from '.';
+import { IconClose, IconDocument, IconFolder, Logo, IconUpload } from '.';
 
 const Icon = ({
   name,
 }: {
-  name: 'document' | 'folder' | 'logo' | 'upload';
+  name: 'close' | 'document' | 'folder' | 'logo' | 'upload';
 }) => {
   switch (name) {
+    case 'close':
+      return <IconClose />;
     case 'document':
       return <IconDocument />;
     case 'folder':
