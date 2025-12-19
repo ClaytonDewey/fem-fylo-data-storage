@@ -1,0 +1,43 @@
+@use '../util' as *;
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: 16px;
+  background: transparent;
+
+  &::-webkit-slider-runnable-track {
+    height: rem(14);
+    background-color: transparent;
+    border-radius: rem(10);
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    height: rem(14);
+    width: rem(14);
+    background-color: hsl(var(--clr-white) / 1);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 74, 149, 1);
+    /*  slider progress trick  */
+    box-shadow: -407px 0 0 400px rgba(255, 74, 149, 1);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: rem(20);
+    height: rem(20);
+    background: hsl(var(--clr-blue-950) / 1);
+    border-radius: rem(10);
+    padding: rem(3);
+  }
+}
